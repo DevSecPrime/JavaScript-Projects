@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow: hidden;
+}
+.aryan .canvases h2 
+{
+    background: transparent !important;
+    color: red !important;
+    /* margin: auto auto ; */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
