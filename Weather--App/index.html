@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="shortcut icon" href="assets/weather-app.png"
+            type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- top level container -->
+        <section class="cover" id="wrapper">
+            <!-- weather container -->
+
+            <h1>weather app</h1>
+
+            <div class="tab-container">
+                <p class="tab" data-userWeather>your weather</p>
+                <p class="tab" data-searchWeather>search weather</p>
+            </div>
+
+            <div class="weather-container" id="app">
+
+                <!-- grant-location-containetr--1st -->
+                <div class="sub-container grant-location-container">
+
+                    <img src="assets/location.png" loading="lazy"
+                        width="80"
+                        height="80"
+                        alt="location img">
+
+                    <p>Grant location access</p>
+                    <p>Allow access to get weather information</p>
+                    <button class="btn" data-grantAccess>Grant Access</button>
+
+                </div>
+
+                <!-- grant-location-containetr--1st -- done---->
+
+                <!-- search form -- 2nd --form container-->
+                <form action class="form-container" data-searchForm>
+                    <input placeholder="search for city..." data-searchInput>
+
+                    <button class="btn" tupe="submit">
+                        <img src="assets/search.png"
+                            loading="lazy"
+                            alt="can`t search"
+                            width="20"
+                            height="20"
+                            srcset>
+                    </button>
+                </form>
+
+                <!-- form--end -->
+
+                <!-- loading container---3rd -->
+                <div class="sub-container loading-container">
+                    <img src="assets/loading.gif"
+                        width="150"
+                        height="150"
+                        loading="lazy"
+                        alt="Loading...">
+
+                    <p>loading</p>
+                </div>
+
+                <!-- loading--end -->
+
+                <!-- weather-info-container -- 4th -->
+                <div class="sub-container user-info-container">
+
+                    <!-- city name and flag -->
+                    <div class="name">
+                        <p data-cityName></p>
+                        <p data-countryIcon></p>
+                    </div>
+
+                    <!-- weather description -->
+                    <p data-weatherDesc></p>
+
+                    <!-- weather Icon-- -->
+                    <img data-weatherIcon>
+
+                    <!-- temprature -->
+                    <p data-temp></p>
+
+                    <!-- 3 cards --- parameters -->
+
+                    <div class="parameter-container">
+
+                        <!-- car-1-- -->
+                        <div class="parameter">
+                            <img src="assets/wind.png" loading="lazy"
+                                alt="can`t load">
+                            <p>Windspeed</p>
+                            <p data-windspeed></p>
+                        </div>
+
+                        <!-- card--2 -->
+                        <div class="parameter">
+                            <img src="assets/humidity.png" loading="lazy"
+                                alt="can`t load">
+                            <p>Humidity</p>
+                            <p data-Humidity></p>
+                        </div>
+
+                        <!-- card--3 -->
+                        <div class="parameter">
+                            <img src="assets/cloud.png" loading="lazy"
+                                alt="can`t">
+                            <p>Clouds</p>
+                            <p data-cloudiness></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
