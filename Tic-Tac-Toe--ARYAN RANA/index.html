@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="assets/favicon-icon.png"
+            type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <!-- ---main--cover--- -->
+        <div class="wrapper" id="cover">
+
+            <form class="form-container">
+                <label for="player-1">Player-1</label>
+                <input class="player-1" placeholder="Enter Player 1 Name">
+                <label for="player-2">Player-2</label>
+                <input class="player-2" placeholder="Enter Player 2 Name">
+                <button class="start-btn" type="submit">Start Game</button>
+            </form>
+
+            <!-- main--container-- -->
+            <section class="main-container">
+
+                <!-- headid--0 or X-- -->
+                <div>
+                    <p class="game-info"></p>
+                </div>
+
+                <!-- main --- 9 - -- divs -->
+                <div class="tic-tac-toe">
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                    <div class="box box4"></div>
+                    <div class="box box5"></div>
+                    <div class="box box6"></div>
+                    <div class="box box7"></div>
+                    <div class="box box8"></div>
+                    <div class="box box9"></div>
+                </div>
+                <!-- sound--efects-- -->
+                <audio id="clickSound">
+                    <source src="./assets/click.wav" type="audio/mp3">
+                </audio>
+                <audio id="winSound">
+                    <source src="./assets/win.mp3" type="audio/mp3">
+                </audio>
+                <audio id="drawSound">
+                    <source src="./assets/sad.wav" type="audio/mp3">
+                </audio>
+                <audio id="clapping">
+                    <source src="./assets/clapping.mp3" type="audio/mp3">
+                </audio>
+
+            </section>
+
+            <!-- winner--container -->
+
+            <div class="winner-container">
+                <h3 class="winner-harcore"></h3>
+                <p class="winnerName">Kaustav</p>
+            </div>
+
+            <!-- button--section -->
+
+            <button class="btn">new game</button>
+
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>
